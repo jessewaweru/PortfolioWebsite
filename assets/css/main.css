@@ -51,10 +51,6 @@ table {
 	border-spacing: 0;
 }
 
-body {
-	-webkit-text-size-adjust: none;
-}
-
 mark {
 	background-color: transparent;
 	color: inherit;
@@ -73,10 +69,6 @@ input, select, textarea {
 }
 
 /* Basic */
-
-	@-ms-viewport {
-		width: device-width;
-	}
 
 	body {
 		-ms-overflow-style: scrollbar;
@@ -252,7 +244,6 @@ input, select, textarea {
 	}
 
 	pre {
-		-webkit-overflow-scrolling: touch;
 		font-family: "Courier New", monospace;
 		font-size: 0.9rem;
 		margin: 0 0 2rem 0;
@@ -4218,21 +4209,21 @@ input, select, textarea {
 				padding: 0;
 			}
 
-				#footer > section.split > section {
+				#footer > section.split > div {
 					padding: 3rem 4rem 1rem 4rem ;
 					border-top: solid 2px #e2e2e2;
 				}
 
-					#footer > section.split > section:first-child {
+					#footer > section.split > div:first-child {
 						padding: 5rem 4rem 1rem 4rem ;
 						border-top: 0;
 					}
 
-					#footer > section.split > section:last-child {
+					#footer > section.split > div:last-child {
 						padding: 3rem 4rem 3rem 4rem ;
 					}
 
-				#footer > section.split.contact > section {
+				#footer > section.split.contact > div {
 					display: -moz-flex;
 					display: -webkit-flex;
 					display: -ms-flex;
@@ -4244,11 +4235,15 @@ input, select, textarea {
 					padding: 3.15rem 4rem;
 				}
 
-					#footer > section.split.contact > section > * {
+				#footer > section.split.contact > div > p {
+					text-align: center;
+				}
+
+					#footer > section.split.contact > div > * {
 						margin-bottom: 0;
 					}
 
-					#footer > section.split.contact > section > :first-child {
+					#footer > section.split.contact > div > :first-child {
 						-moz-flex-shrink: 0;
 						-webkit-flex-shrink: 0;
 						-ms-flex-shrink: 0;
@@ -4260,7 +4255,7 @@ input, select, textarea {
 						width: 6rem;
 					}
 
-					#footer > section.split.contact > section > :last-child {
+					#footer > section.split.contact > div > :last-child {
 						-moz-flex-shrink: 1;
 						-webkit-flex-shrink: 1;
 						-ms-flex-shrink: 1;
@@ -4271,22 +4266,22 @@ input, select, textarea {
 						flex-grow: 1;
 					}
 
-					#footer > section.split.contact > section:first-child {
+					#footer > section.split.contact > div:first-child {
 						padding: 4rem 4rem 3rem 4rem;
 					}
 
-					#footer > section.split.contact > section:last-child {
+					#footer > section.split.contact > div:last-child {
 						padding: 3rem 4rem 4rem 4rem;
 					}
 
-					#footer > section.split.contact > section.alt {
+					#footer > section.split.contact > div.alt {
 						-moz-align-items: -moz-flex-start;
 						-webkit-align-items: -webkit-flex-start;
 						-ms-align-items: -ms-flex-start;
 						align-items: flex-start;
 					}
 
-						#footer > section.split.contact > section.alt > :last-child {
+						#footer > section.split.contact > div.alt > :last-child {
 							margin-top: -0.325rem;
 						}
 
@@ -4310,27 +4305,27 @@ input, select, textarea {
 						border-top: 0;
 					}
 
-					#footer > section.split > section {
+					#footer > section.split > div {
 						padding: 4rem 4rem 2rem 4rem ;
 					}
 
-						#footer > section.split > section:first-child {
+						#footer > section.split > div:first-child {
 							padding: 4rem 4rem 2rem 4rem ;
 						}
 
-						#footer > section.split > section:last-child {
+						#footer > section.split > div:last-child {
 							padding: 4rem 4rem 2rem 4rem ;
 						}
 
-					#footer > section.split.contact > section {
+					#footer > section.split.contact > div {
 						padding: 4rem;
 					}
 
-						#footer > section.split.contact > section:first-child {
+						#footer > section.split.contact > div:first-child {
 							padding: 4rem;
 						}
 
-						#footer > section.split.contact > section:last-child {
+						#footer > section.split.contact > div:last-child {
 							padding: 4rem;
 						}
 
@@ -4348,27 +4343,27 @@ input, select, textarea {
 				padding: 2rem 2rem 0.1rem 2rem ;
 			}
 
-				#footer > section.split > section {
+				#footer > section.split > div {
 					padding: 2rem 2rem 0.1rem 2rem ;
 				}
 
-					#footer > section.split > section:first-child {
+					#footer > section.split > div:first-child {
 						padding: 2rem 2rem 0.1rem 2rem ;
 					}
 
-					#footer > section.split > section:last-child {
+					#footer > section.split > div:last-child {
 						padding: 2rem 2rem 0.1rem 2rem ;
 					}
 
-				#footer > section.split.contact > section {
+				#footer > section.split.contact > div {
 					padding: 2rem;
 				}
 
-					#footer > section.split.contact > section:first-child {
+					#footer > section.split.contact > div:first-child {
 						padding: 2rem;
 					}
 
-					#footer > section.split.contact > section:last-child {
+					#footer > section.split.contact > div:last-child {
 						padding: 2rem;
 					}
 
@@ -4561,7 +4556,6 @@ input, select, textarea {
 		-ms-transition: -ms-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
 		transition: transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
 		display: none;
-		-webkit-overflow-scrolling: touch;
 		background: #ffffff;
 		box-shadow: none;
 		color: #212931;
