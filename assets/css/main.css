@@ -4681,3 +4681,7 @@ input, select, textarea {
 		}
 
 	}
+
+	.project-tag {
+		text-align: center;
+	}
